@@ -10,7 +10,7 @@ Space complexity: O(H). H is the height.
 
 ```java
 class Solution {
-  public TreeNode lowestCommonAncestor(TreeNode root, TreeNode[] nodes) {
+  public TreeNode lowestCommonAncestor(TreeNode root, List<TreeNode> nodes) {
     Set<TreeNode> nodeSet = new HashSet<>();
     for (TreeNode node : nodes) nodeSet.add(node);
     return LCA(root, nodeSet);
